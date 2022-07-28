@@ -1,0 +1,26 @@
+@media screen and (max-width: 749px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .filme-principal {
+        background:linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)100%), url('/img/viuva-negra-capa-pq.jpg');
+        background-size: cover;
+    }
+
+    .filme-principal .descricao {
+        width: 60%;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin-bottom: 15px;
+        width: 60%;
+    }
+}

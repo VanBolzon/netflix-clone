@@ -1,0 +1,98 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+    --cinza-claro: #AAA;
+    --branco: #FFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--branco);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cinza-claro);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--branco);
+}
+
+/*Filme principal*/
+.filme-principal {
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)100%), url('/img/viuva-negra-capa.jpg');
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    margin-left: 10px;
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .descricao {
+    text-align: justify;
+    margin: 30px 0 50px;
+    width: 38%;
+}
+
+.botao {
+    background-color: rgba(255, 0, 0, 0.50);
+    color: var(--branco);
+    border: none;
+    margin-right: 10px;
+    padding: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.botao:hover {
+    border: 1px solid white;
+    color: red;
+    background-color: var(--branco);
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
